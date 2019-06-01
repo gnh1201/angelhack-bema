@@ -9,7 +9,7 @@
 
 define("_DEF_VSPF_", true); // compatible to VSPF
 define("_DEF_RSF_", true); // compatible to RSF
-define("APP_DEVELOPMENT", true); // set the status of development
+define("APP_DEVELOPMENT", false); // set the status of development
 define("DOC_EOL", "\r\n"); // set the 'end of line' commonly
 define("CORS_DOMAINS", false); // allow origin domains
 
