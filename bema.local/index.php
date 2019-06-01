@@ -55,7 +55,7 @@ if(CORS_DOMAINS !== false) {
 $scope = array();
 
 // define system modules
-$load_systems = array("base", "storage", "config", "security", "database", "uri", "logger");
+$load_systems = array("base", "storage", "config", "security", "uri", "logger");
 
 // load system modules
 foreach($load_systems as $system_name) {
