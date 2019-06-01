@@ -13,7 +13,7 @@
                 <a class="pagename current" href="#">Team BEMA</a>
                 <a href="#">Call</a>
                 <a href="#">Connect</a>
-                <a href="#">Rescue<</a>
+                <a href="#">Rescue</a>
             </div>
         </nav>
         <button class="btn-close btn btn-sm">×</button>
@@ -40,18 +40,32 @@
                     <br><a href="https://github.com/gnh1201/reasonableframework" class="btn btn-sm btn-c">Do stuff!</a>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <form method="post" action="<?php echo base_url(); ?>" enctype="multipart/form-data">
-                <div class="hidden">
-                    <input type="hidden" name="route" value="welcome">
+            <div class="row">
+                <div class="col c4">
+                <form method="post" action="<?php echo base_url(); ?>" enctype="multipart/form-data">
+                    <div class="hidden">
+                        <input type="hidden" name="route" value="welcome">
+                        <input type="hidden" name="action" value="update">
+                    </div>
+                    <div>
+                        <h3>File Upload</h3>
+                        <input type="file" name="file">
+                        <button type="submit">Send</button>
+                    </div>
+                    <div>
+                        <ul>
+<?php
+                        foreach($files as $file) {
+?>
+                            <li><a href="<?php echo $file['upload_url']; ?>">Download</a></li>
+<?php
+                        }
+?>
+                        </ul>
+                    </div>
+                </form>
                 </div>
-                <div>
-                    <h3>File Upload</h3>
-                    <input type="file" name="file">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+            </div>
         </div>
         <noscript><div>Javascript not detected</div></noscript>
     </body>

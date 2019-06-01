@@ -1,0 +1,12 @@
+{
+    "title": "AngelHack Hackathon Seoul 2019 Team BEMA",
+    "sponsors": ["IBM", "LGUPLUS","AWS"],
+    "authors": [
+        "Go Namhyeon <gnh1201@gmail.com>",
+        "Shim juseob <simjuseob@gmail.com>",
+        "Lee Changbok <changbok2453@gmail.com>",
+        "Jo Dasom <jeotimeg@gmail.com>",
+        "Lee Hyehwan <sparrow_hh@naver.com>"
+    ],
+    "cvs": "https://github.com/gnh1201/angelhack-bema"
+}
